@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
+    <?php  ///loading already written blogs
 require("connection.php");
 session_start();
         $useremail = $_SESSION['useremail'];
@@ -61,6 +61,14 @@ session_start();
           <p class='display-4'> No Blogs Yet!</p><br><br><br><br><br>
           </div>";
           }
+
+
+?>
+
+
+
+<?php  // blogs to be written
+
 
 
 ?>

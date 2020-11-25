@@ -279,6 +279,7 @@ function set(id)
                 var imgSrc=document.getElementById('imgSrc'+id).src;
                 var checkIn ="<?php echo $checkIn; ?>";
                 var checkOut ="<?php echo $checkOut; ?>";
+                var destination = "<?php echo $_POST['destination']; ?>";
                 document.getElementById("getHotelName").innerHTML=hotelname;
                
 
@@ -293,7 +294,7 @@ function set(id)
        $.ajax({
                 url:'insertHotels.php',
                 type:'post',
-                data:{'price':price,'hotelname':hotelname,'rating':rating,'checkIn':checkIn,'checkOut':checkOut,'address':address,'imgSrc':imgSrc},
+                data:{'price':price,'hotelname':hotelname,'rating':rating,'checkIn':checkIn,'checkOut':checkOut,'address':address,'imgSrc':imgSrc,'destination':destination},
             
                 
                 

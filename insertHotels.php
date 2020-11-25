@@ -13,6 +13,7 @@ $checkOut=$_POST['checkOut'];
 $destination=$_POST['destination'];
 
 $db->query("insert into hoteldb values('$hotelname','$destination','$price','$address','$imgSrc','$email','$checkIn','$checkOut','$rating')");
+$db->query("insert into unaddedblogs values('$email','$destination')");
 
 echo $email;
 echo $imgSrc;

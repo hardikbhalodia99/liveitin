@@ -10,18 +10,13 @@
 <body>
 
     <?php
+    require("connection.php");
   session_start();
     $emailid = $_SESSION['useremail'];
-    // $emailid="123@gmail.com";
+   
 $no=0;
     if (isset($emailid)  ) {
 
-        //$id = $_GET['id'];
-      
-          $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("Fav Blog Tour database connection failed...");
-       // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
-
-        
             $sql = "SELECT * FROM favourite where email='$emailid'";
             $result = $db->query($sql);
             if ($result->num_rows > 0) {

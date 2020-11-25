@@ -7,11 +7,10 @@
 </head>
 <body>
     <?php
-
+require("connection.php");
 session_start();
         $useremail = $_SESSION['useremail'];
     
-          $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die(" Blog  database connection failed...");
          $sql = "SELECT * FROM blogs where email='$useremail'";
          $result = $db->query($sql);
 
@@ -57,9 +56,9 @@ session_start();
           echo "</div>";
          }
          else {
-          echo"<br><br><br><br><br><br><br><br><br><br>
+          echo"<br><br>
           <div class='text-center'>
-          <p class='display-4'> No Blogs Yet!</p><br><br>
+          <p class='display-4'> No Blogs Yet!</p><br><br><br><br><br>
           </div>";
           }
 

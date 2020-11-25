@@ -65,16 +65,12 @@ window.onscroll = function changeNavBg() {
 <body>
 
 <?php
- include('navbar.php');
-
+ require('navbar.php');
  
-  
  if (isset($_SESSION['useremail'])) {
    $useremail = $_SESSION['useremail'];
-
-   // Create database connection
-   $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("Fav Blog Tour database connection failed...");
-
+ 
+   
    //making query
    $sql = "SELECT * from account_info where email='$useremail'" or die("image name fetching failed");
    $result = mysqli_query($db, $sql) or die("query failed");

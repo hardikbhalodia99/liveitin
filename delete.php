@@ -1,5 +1,5 @@
 <?php
-$link=new mysqli("localhost","id15026047_patel_jayen","msukifeeS@99","id15026047_freehost");
+require("connection.php");
 session_start();
 
 
@@ -9,7 +9,7 @@ $place=$_POST['place'];
 echo "$email";
 // if(isset($email))
 // {
-    $link->query("DELETE FROM favourite WHERE place='$place' AND email='$email'");
+    $db->query("DELETE FROM favourite WHERE place='$place' AND email='$email'");
     
 // }
 // else

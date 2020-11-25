@@ -19,22 +19,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
 <?php
+require('connection.php');
+
 session_start();
  if (isset($_SESSION['useremail'])) {
     $useremail = $_SESSION['useremail'];
-    // Create database connection
-      $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
-   // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
-
+   
     //making query
     $sql = "SELECT * from account_info where email='$useremail'" or die("image name fetching failed");
     $result = mysqli_query($db, $sql) or die("query failed");
     $row = mysqli_fetch_assoc($result);
     $imagename = "profileImages/" . $row['image'];
     $profilename = $row['name'];
-    // echo"$imagename ->>>>> $profilename";
-    //$_REQUEST['profilename'] = $profilename;
-
+   
     echo "
     
     <script type='text/javascript'>

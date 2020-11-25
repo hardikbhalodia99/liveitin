@@ -1,0 +1,168 @@
+
+    .navtext{
+        font-size: 13px;
+        color: gray;
+        /* height:18px; */
+        /* margin-left:3px; */
+        /* margin: auto; */
+  
+    }
+    .navtext:hover
+    {
+      /* font-size:secondary text-centerpx; */
+        color:black;
+        /* margin: auto; */
+   }
+   .fa {
+    /* padding: 5px; */
+    font-size: 25px;
+    margin-left:10px;
+   
+       display: inline-block;
+  font: normal normal normal 24px/1 FontAwesome;
+    text-rendering: auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: honeydew;
+    justify-content: center;
+    color: rgb(134, 134, 134);
+    border-radius: 50%;
+    
+  }
+  .fa:hover {
+    color:black;
+    text-decoration: none;
+    opacity: 1;
+    /* fill: black; */
+  }
+  .dropdown-toggle{
+      margin-left: 23px;
+  }
+  body{
+   align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dosis', sans-serif;
+}
+#section2{
+  margin:50px 100px 10px 100px; 
+  
+  justify-content: center;
+}
+
+
+.alend{
+  margin-top: 100px;
+  margin-left: 17px;
+  padding: 7px;
+  font-weight: bolder;
+  font-size: x-large;
+  color:rgb(255, 255, 255);
+}
+
+.bi{
+  margin-left: 10px;
+}
+.bi:hover{
+  fill:orange;
+ 
+}
+.item background-img{
+  justify-content: center;
+}
+
+
+
+
+hr{
+  
+  justify-self: left;
+  height: 1px;
+  
+background-color:gray;
+border: none;
+}
+
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    /* background: 0 0; */
+    color:black;
+    
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    border: none;
+    overflow: hidden;
+    padding: 0!important;
+    font:normal normal normal 34px/1 FontAwesome;
+
+}
+
+
+.al,.al:hover ,a ,a:hover{
+  color: whitesmoke;
+  text-align: left;
+}
+
+.outerdiv{
+display: flex;
+justify-content: center;
+}
+
+.innerdiv{
+width: 37rem;
+margin: 10px;
+
+}
+
+.card{
+  margin : 20px;
+  margin-top: 35px;
+}
+
+.innerimg{
+height: 320px;
+}
+
+.readbtn{
+  margin-top: 16em;
+  margin-left: 2em;
+}
+@media (max-width : 800px)
+{
+  .outerdiv{
+    display: inline;
+    justify-content: center;
+    }
+    
+    .innerdiv{
+    width: auto;
+    justify-content: center;
+    
+    }
+
+    .coroimg{
+      height: 330px;
+    }
+  
+    .resizebtn{
+      margin-top: 16em;
+    }
+    .readbtn{
+        margin-top: 30px;
+      margin-left: 2em;
+    }
+}
+
+@media (max-width : 650px)
+{
+  .coroimg{
+    height: 245px;
+  }
+}

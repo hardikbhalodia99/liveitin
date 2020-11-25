@@ -106,7 +106,7 @@ include("nav.php");
     <div class="row ">
       <div class="col-md-7 cardWhereToGO">
         <a href="tajMahal.php">
-        <img src="images/TajMAhal.jpg" class="card-img" alt="Taj MAhal, India">
+        <img src="images/TajMahal.jpg" class="card-img" alt="Taj MAhal, India">
       </a>
       </div>
       <div class="col container">

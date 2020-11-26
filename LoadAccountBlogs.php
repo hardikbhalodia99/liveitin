@@ -11,17 +11,21 @@
   <?php  ///loading already written blogs
   require("connection.php");
   session_start();
+
   $useremail = $_SESSION['useremail'];
 
+  
   $sql = "SELECT * FROM blogs where email='$useremail'";
   $result = $db->query($sql);
-
+  $flag = 0;
 
   if ($result->num_rows > 0) {
+    echo '<div class="row"  style="margin-left: 10px; margin-right: 10px; margin-top: 50px;">';
 
-    echo '<div class="row col-md-6 col-sm-6 col-lg-6" style="margin-left: 10px; margin-right: 10px; margin-top: 10px;">';
-    while ($row = $result->fetch_assoc()) {
-      echo " <div class='card border border-light'>";
+    while ($row = $result->fetch_assoc()) 
+    {
+      echo " <div class='card border border-light col-md-6 col-sm-6 col-lg-6' style=' margin-bottom: 20px;' >";
+
       $email = $row['email'];
 
       $info = "SELECT * FROM account_info where email='$useremail'";
@@ -50,38 +54,74 @@
           
               </div>
               </div>
-              ';
+          ';//echo ends here
     }
     echo "</div>";
-  } else {
-    // blogs to be written 
-    $sql = "SELECT * FROM unaddedblogs where email='$useremail'";
-    $result = $db->query($sql);
+    $flag = 1;
+  }
 
+  // blogs to be written 
+  $sql = "SELECT * FROM unaddedblogs where email='$useremail'";
+  $result = $db->query($sql);
 
+  if ($result->num_rows > 0) {
+    echo '
+      <!-- Button trigger modal -->
+      <div style="margin-left:50%; margin-bottom:30px; margin-top:30px;">
+<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalCenter" data-backdrop="static" data-keyboard="false">
+  Add Blogs
+</button>
+    </div>
 
+<!-- Modal -->
+<div  class="modal fade" id="exampleModalCenter" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  <form action="uploadblog.php" method="POST" enctype="multipart/form-data" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="text" class="modal-title" id="exampleModalLongTitle" name="exampleModalLongTitle" placeHolder="Title">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-header">
+      <input type="text" class="modal-title"  name="exampleModalPlace" placeHolder="Place">
+      <input type="date" class="modal-title "  name="exampleModalDate" placeHolder="Date">
+    </div>
+    <div class="modal-header">
+    <input  type="file" accept="image/png, image/jpeg, image/jpg" name="blogpicture" id="blogpicture" placeholder="Select your Profile Picture...">
+    </div>
 
-    if ($result->num_rows > 0) {
+      <textarea name="blogbody" id="blogbody" class="modal-body"   cols="30" rows="10" placeHolder="Blog Body.....">
+      Blog body...
+      </textarea>
       
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit"  name="submit" class="btn btn-primary" value="Save changes">
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
 
-
-
-
-    }
-     else
-      {
-      echo "<br><br>
+';
+    $falg = 1;
+  }
+  if ($flag == 0) {
+    echo "<br><br>
         <div class='text-center'>
         <p class='display-4'> No Blogs Yet!</p><br><br><br><br><br>
         </div>";
-    }
   }
+
 
 
 
   ?>
 
-
+ 
 
 
 

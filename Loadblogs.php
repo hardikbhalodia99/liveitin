@@ -7,10 +7,10 @@
 </head>
 <body>
     <?php
-
+      require("connection.php");
         $place = $_GET['place'];
     
-          $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die(" Blog  database connection failed...");
+          //$db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die(" Blog  database connection failed...");
         // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
 
         

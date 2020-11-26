@@ -142,11 +142,11 @@
     </script>
 </head>
  <?php
-    session_start();
+  
     if (isset($_REQUEST['submit'])) {
-
+        require("connection.php");
         // Create database connection
-          $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
+      //    $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
        // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
 
         // Initialize message variable

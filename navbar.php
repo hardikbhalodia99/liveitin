@@ -83,7 +83,7 @@ session_start();
   {
     $emailid=$_REQUEST['username'];
     $pwd=$_REQUEST['password'];
-          $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
+         // $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
 
    // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die(" login help me");
 

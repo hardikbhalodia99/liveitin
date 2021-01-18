@@ -25,9 +25,9 @@
 </style>
 </head>
 <body>
-    <?php
-    include("nav.php");
-    ?><br><br><br>
+<?php
+include("nav.php");
+?><br><br><br>
     <div class="modal" tabindex="-1" id="myModal">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
@@ -115,7 +115,7 @@ curl_setopt_array($curl1, array(
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
 		"x-rapidapi-host: skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-		"x-rapidapi-key: 18daba6401mshbe0740ea0d7b755p1df9f7jsn20cef4fb4567"
+		"x-rapidapi-key: fd0ef8cecamsh118df3858b98cb3p195b70jsn4ac738bd8e7f"
 	),
 ));
 curl_setopt($curl1, CURLOPT_SSL_VERIFYPEER, false);
@@ -142,7 +142,7 @@ curl_setopt_array($curl1, array(
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
 		"x-rapidapi-host: skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-		"x-rapidapi-key: 18daba6401mshbe0740ea0d7b755p1df9f7jsn20cef4fb4567"
+		"x-rapidapi-key: fd0ef8cecamsh118df3858b98cb3p195b70jsn4ac738bd8e7f"
 	),
 ));
 curl_setopt($curl1, CURLOPT_SSL_VERIFYPEER, false);
@@ -171,7 +171,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
 		"x-rapidapi-host: skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-		"x-rapidapi-key: 18daba6401mshbe0740ea0d7b755p1df9f7jsn20cef4fb4567"
+		"x-rapidapi-key: fd0ef8cecamsh118df3858b98cb3p195b70jsn4ac738bd8e7f"
 	),
 ));
 
@@ -195,12 +195,28 @@ $i=0;
 $name="";
 $src="";
 $direct="";
+$cou=sizeof($data->Places);
+if($cou==0)
+{
+echo "<p style='font-size:4vh;'>There are no flights</p>";
+}
+
+
+else
+{
+    
+
 $origin=$data->Places[0]->Name;
-
 $destination=$data->Places[1]->Name;
-
 $x=sizeof($data->Carriers);
 $y=sizeof($data->Quotes);
+if($y==0)
+{
+ echo "<p style='font-size:4vh'>There are no flights</p>";
+}
+else{
+    
+    
 
 for($i=0;$i<$y;$i++)
 {
@@ -305,6 +321,7 @@ $src="images/emirates.svg";
                 var destination= document.getElementById('destination' + id).innerText;
                 var date = document.getElementById('date' + id).innerText;
                 var imgSrc=document.getElementById('imgSrc' + id).src;
+                var uid="add"+id;
 
                 console.log(price);
                 console.log(name);
@@ -313,6 +330,8 @@ $src="images/emirates.svg";
                 console.log(date);
                 console.log(btnname);
                 console.log(imgSrc);
+                console.log(uid);
+                
                 
                
                  $.ajax({
@@ -330,7 +349,11 @@ $src="images/emirates.svg";
                     
                 }
                 });
-                $('#myModal').modal('show');
+                 
+               $('#uid').prop('disabled',true);
+                  $('#uid').val('Already Added To Your Favourites');
+                  $('#uid').css("background-color", "green");
+                 $('#myModal').modal('show');
                 
               
                            
@@ -341,9 +364,9 @@ $src="images/emirates.svg";
 }
 }
 }
-    
 }
-
+}
+}
 ?><br><br>
 
   <?php

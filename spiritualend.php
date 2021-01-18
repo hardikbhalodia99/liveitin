@@ -116,7 +116,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Sun Temple,Konark</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Sun Temple,<br>Konark</h6>
                             <p class="card-text">
                             <p>
                             <h5>Believed to have been built in the 13th century CE the temple was built by the King

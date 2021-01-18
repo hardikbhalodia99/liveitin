@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Lake Pichola,Udaipur</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Lake Pichola<br>Udaipur</h6>
                             <p class="card-text">
                             <p>
                             <h5>Mesmerising the visitors with its charm and enchanting beauty, Lake Pichola is an

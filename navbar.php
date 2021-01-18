@@ -20,18 +20,22 @@
 
 <?php
 require('connection.php');
-
 session_start();
  if (isset($_SESSION['useremail'])) {
     $useremail = $_SESSION['useremail'];
-   
+    // Create database connection
+    //  $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
+   // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
+
     //making query
     $sql = "SELECT * from account_info where email='$useremail'" or die("image name fetching failed");
     $result = mysqli_query($db, $sql) or die("query failed");
     $row = mysqli_fetch_assoc($result);
     $imagename = "profileImages/" . $row['image'];
     $profilename = $row['name'];
-   
+    // echo"$imagename ->>>>> $profilename";
+    //$_REQUEST['profilename'] = $profilename;
+
     echo "
     
     <script type='text/javascript'>
@@ -195,8 +199,8 @@ data-target="#navbarTogglerDemo0" aria-controls="navbarTogglerDemo0" aria-expand
               <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
             </svg>Trip Planner</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="hotelBook.html">BOOK A HOTEL</a>
-            <a class="dropdown-item" href="flightBook.html">BOOK A FLIGHT</a>
+            <a class="dropdown-item" href="hotelBook.php">BOOK A HOTEL</a>
+            <a class="dropdown-item" href="flightBook.php">BOOK A FLIGHT</a>
             
           </div>
         </li>

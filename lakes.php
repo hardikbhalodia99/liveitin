@@ -201,7 +201,7 @@ $('#Pichola_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Wular Lake, Kashmir</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Wular Lake, Kashmir</h6>
                             <p class="card-text">
                             <p><h5>Located in Jammu and Kashmir, this lake is considered as the largest fresh water lake in
                                 India. The water reservoir is surrounded by farms of small vegetation; plus you can
@@ -226,7 +226,7 @@ $('#Pichola_favBtn').css("background-color", "green");
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Nainital Lake (Naini Lake),Uttarakhand</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Nainital Lake,<br>Uttarakhand</h6>
                             <p class="card-text">
                             <p><h5>Aha! I have been to this place ‘n’ no of times but have never got bored. The best part
                                 about Naini Lake is that it located right in the middle of town and offers a spectacular
@@ -260,7 +260,7 @@ $('#Pichola_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Lake Pichola,Udaipur</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Lake Pichola,<br>Udaipur</h6>
                             <p class="card-text">
                             <p><h5>Mesmerising the visitors with its charm and enchanting beauty, Lake Pichola is an
                                 artificial lake built in the year of 1362 AD and one of the popular sightseeing places
@@ -281,7 +281,7 @@ $('#Pichola_favBtn').css("background-color", "green");
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Saputara Lake,Gujarat</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Saputara Lake,Gujarat</h6>
                             <p class="card-text">
                             <p><h5>Saputara lake is located in Gujarat.The picturesque lake Saputara is located on the
                                 foothills of Sahyadri range. This lake is

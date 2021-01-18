@@ -25,8 +25,8 @@
     </head>
 <body>
      <?php
-  include("navbar.php");
-  $emailId=$_SESSION['useremail'];
+  
+//   $emailId=$_SESSION['useremail'];
   if(isset($emailId))
   {
       $place=$_COOKIE['added'];
@@ -187,7 +187,7 @@ $('#Kochi_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Mumbai To Goa</h6>
+                            <h6 class="card-title" style="font-size:5vh;">Mumbai To Goa</h6>
                             <p class="card-text">
                             <p><h5 id="b">The journey from Mumbai to Goa is now more fun and luxurious with the launch of India’s
                                 first domestic luxury cruise liner Angriya. The cruise, operating on the Mumbai-Goa sea
@@ -209,7 +209,7 @@ $('#Kochi_favBtn').css("background-color", "green");
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Goa Cruises</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Goa Cruises</h6>
                             <p class="card-text">
                             <p><h5>The glorious land of Goa, despite being one of the smallest states in the country, it
                                 holds the top position for the places to visit if you want to have a good time. The
@@ -242,7 +242,7 @@ $('#Kochi_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Kochi Houseboat</h6>
+                            <h6 class="card-title" style="font-size:5vh;">Kochi Houseboat</h6>
                             <p class="card-text">
                             <p><h5>Only a half hour from Kochi is the town of Alappuzha, which is affectionately nicknamed
                                 the “Venice of the East” for its elaborate network of canals and its famous houseboat

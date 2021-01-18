@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- jQuery library -->
+    <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
    
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <style>
@@ -51,7 +61,7 @@
         <hr class="my-4">
         
         <p class="lead ">
-            <a class="btn btn-success btn-lg" href="flightBook.html" role="button">BOOK A FLIGHT</a>
+            <a class="btn btn-success btn-lg" href="flightBook.php" role="button">BOOK A FLIGHT</a>
             <a class="btn btn-success btn-lg" href="index.php" role="button">BACK TO HOMEPAGE</a>
         </p>
     </div>
@@ -279,7 +289,7 @@ function set(id)
                 var imgSrc=document.getElementById('imgSrc'+id).src;
                 var checkIn ="<?php echo $checkIn; ?>";
                 var checkOut ="<?php echo $checkOut; ?>";
-                var destination = "<?php echo $_POST['destination']; ?>";
+                var destination = "<?php echo $_REQUEST['destination']; ?>";
                 document.getElementById("getHotelName").innerHTML=hotelname;
                
 

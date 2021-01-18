@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
-
+<link rel="stylesheet" href="css/HomeCSS.css">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/worldHeritageSite.css">
@@ -34,21 +34,12 @@
 <body>
 <?php
 include("nav.php");
-
 ?>
-
-
-
-  <!--***********************************navigation bar*******************************************************-->
-
-
-  <!--**************************************slide images****************************************************-->
-
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
 
       
     </ol>
@@ -106,7 +97,7 @@ include("nav.php");
     <div class="row ">
       <div class="col-md-7 cardWhereToGO">
         <a href="tajMahal.php">
-        <img src="images/TajMahal.jpg" class="card-img" alt="Taj MAhal, India">
+        <img src="images/TajMAhal.jpg" class="card-img" alt="Taj MAhal, India">
       </a>
       </div>
       <div class="col container">

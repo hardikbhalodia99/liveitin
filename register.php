@@ -1,3 +1,56 @@
+<?php
+    
+    require("connection.php");
+    if (isset($_REQUEST['submit'])) {
+
+        // Create database connection
+        //  $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
+       // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
+
+        // Initialize message variable
+        $msg = "";
+
+        // Get image name
+        $image = $_FILES['image']['name'];
+        // image file directory
+        $target = "profileImages/" . basename($image);
+
+
+        // Get email
+        $email = $_REQUEST['email'];
+        $password = $_REQUEST['password'];
+        $phone = $_REQUEST['mobile'];
+        $name = $_REQUEST['name'];
+
+        $db->query("INSERT INTO account_info(email,name,password,mobile,image) VALUES('$email','$name','$password',$phone,'$image')") or die("query info insertion failed");
+        
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+            $msg = "Image uploaded successfully";
+            
+            $_SESSION['useremail']=$email;
+ 
+
+
+
+    ?>
+            <script>
+                window.location = "index.php";
+            </script>
+
+    <?php
+
+            echo $msg;
+        } else {
+            $msg = "Failed to upload image";
+            echo $msg;
+        }
+    }
+
+
+
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -141,58 +194,7 @@
         }
     </script>
 </head>
- <?php
-  
-    if (isset($_REQUEST['submit'])) {
-        require("connection.php");
-        // Create database connection
-      //    $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("help me");
-       // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
 
-        // Initialize message variable
-        $msg = "";
-
-        // Get image name
-        $image = $_FILES['image']['name'];
-        // image file directory
-        $target = "profileImages/" . basename($image);
-
-
-        // Get email
-        $email = $_REQUEST['email'];
-        $password = $_REQUEST['password'];
-        $phone = $_REQUEST['mobile'];
-        $name = $_REQUEST['name'];
-
-        $sql = "INSERT INTO account_info(email,name,password,mobile,image) VALUES('$email','$name','$password',$phone,'$image')" or die("query info insertion failed");
-        mysqli_query($db, $sql) or die("account info insertion failed");
-
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-            $msg = "Image uploaded successfully";
-            
-            $_SESSION['useremail']=$email;
- 
-
-
-
-    ?>
-            <script>
-                window.location = "index.php";
-            </script>
-
-    <?php
-
-            echo $msg;
-        } else {
-            $msg = "Failed to upload image";
-            echo $msg;
-        }
-    }
-
-
-
-
-    ?>
 
 
 <body background="images/ballons.webp">

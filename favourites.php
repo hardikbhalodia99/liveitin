@@ -1,4 +1,13 @@
 
+<?php
+if(!isset($_SESSION['useremail']))
+{
+  header("location: error.html");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,12 +74,16 @@ window.onscroll = function changeNavBg() {
 <body>
 
 <?php
- require('navbar.php');
+ include('nav.php');
+require("connection.php");
  
+  
  if (isset($_SESSION['useremail'])) {
    $useremail = $_SESSION['useremail'];
- 
+
+   // Create database connection
    
+
    //making query
    $sql = "SELECT * from account_info where email='$useremail'" or die("image name fetching failed");
    $result = mysqli_query($db, $sql) or die("query failed");
@@ -92,11 +105,11 @@ window.onscroll = function changeNavBg() {
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-10 mx-auto">
-                <img class="mx-auto" src="<?= $imagename; ?>" style="border-radius: 50%;width:260px;height:260px;">
+                <img class="text-center" src="<?= $imagename; ?>" style="border-radius: 50%;width:240px;height:240px;">
             </div>
                 
              <div class="col-lg-6 col-md-10 col-sm-12 mx-auto">
-                <p id="username"><b class="display-4" ><?= $profilename; ?></b></p>
+                <p id="username"><b  style="font-size:4vw;"><?= $profilename; ?></b></p>
                   <span class="">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="#14534f" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
@@ -114,15 +127,7 @@ window.onscroll = function changeNavBg() {
           
               <div class="col-lg-3 col-md-10 col-sm-10 mx-auto" >
                 <h2 style="color:  #14534f;">Follow Us</h2>
-                <div class=" d-flex mx-auto">
-                  <ul class="nav nav-pills card-header-pills">
-                  <a href="#" class="fa fa-twitter text-center ml-0"></a><br>
-                  <a href="#" class="fa fa-google text-center "></a><br>
-                   <a href="#" class="fa fa-instagram text-center"></a><br>
-                   <a href="#" class="fa fa-youtube text-center"></a><br>
-                   <a href="#" class="fa fa-facebook text-center"></a>
-                   </ul>
-              </div>
+                
               <br>
               <a class="btn btn-info active"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
@@ -147,7 +152,7 @@ window.onscroll = function changeNavBg() {
             <input type="radio" name="options" onclick="loadfile('3')" id="option3" autocomplete="off"> Blogs
           </label>
         </div>
-      </div>
+      </div><br><br>
      
 
       <script>
@@ -186,9 +191,9 @@ window.onscroll = function changeNavBg() {
     </script>
 
 
-        <div id="itembox"  >
+        <div id="itembox"  style="font-size:3vw;"  >
 Your contents will load here
-      </div>
+      </div><br><br>
       
   <?php include('footer.html');?>
 </body>

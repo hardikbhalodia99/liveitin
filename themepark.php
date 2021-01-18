@@ -178,7 +178,7 @@ $('#Atlantis_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Water Kingdom,Mumbai</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Water Kingdom,<br>Mumbai</h6>
                             <p class="card-text">
                             <p>
                             <h5>Asia’s largest theme water parks, it boasts of the largest wave pool in the world,
@@ -205,7 +205,7 @@ $('#Atlantis_favBtn').css("background-color", "green");
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Essel World,Mumbai</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Essel World,<br>Mumbai</h6>
                             <p class="card-text">
                             <p>
                             <h5>One of the most famous and popular amusement parks in the country, Essel World is
@@ -236,7 +236,7 @@ $('#Atlantis_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Atlantis Water Park,Dubai</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Atlantis Water Park,Dubai</h6>
                             <p class="card-text">
                             <p>
                             <h5>Aquaventure Waterpark promises a world of excitement to make you feel different in water in more ways than one. Get your pulse racing on 30 slides and attractions, laugh your way down Dubai’s longest Lazy River, and relax on 500m of private beach. Thrill-seekers can scream down world-record-breaking waterslides, young families will enjoy the safety of Splashers Island, and animal lovers can get up close with dolphins, sea lions, sharks and stingrays.</h5>

@@ -34,11 +34,11 @@ crossorigin="anonymous">
   $flag = 0;
 
   if ($result->num_rows > 0) {
-    echo '<div class="row"  style="margin-left: 10px; margin-right: 10px; margin-top: 50px;">';
-
+   // echo '<div class="row"  style="margin-left: 10px; margin-right: 10px; margin-top: 50px;">';
+  echo ' <div class="container-fluid row ml-auto" >';
     while ($row = $result->fetch_assoc()) 
     {
-      echo " <div class='card border border-light col-md-6 col-sm-6 col-lg-6' style=' margin-bottom: 20px;' >";
+      echo " <div class='card-deck  col-md-12 col-sm-12 col-lg-4' style=' margin-bottom: 20px;' >";
 
       $email = $row['email'];
 
@@ -53,13 +53,13 @@ crossorigin="anonymous">
       $headline = $row['headline'];
       $details = $row['details'];
       echo '
-              
+      <div class="card border-light bg-light">
               <div class="card-header text-muted">
                 <img class="rounded-circle float-left dropdown-toggle" style="height: 45px; width:50px; margin-right: 30px;" src="profileImages/' . $img . '"> 
                 <span>By ' . $name . '</span><br>
                 <span style="font-size: 13px; float: right;">Visited@' . $date . '</span>
               </div>
-              <img src="uploadedImages//' . $upimg . '" class="card-img-top" alt="...">
+              <img src="uploadedImages//' . $upimg . '" class="card-img-top" style="height: 350px; width:100%;" alt="...">
               <div class="card-body bg-light">
                 <h3 class="card-title">' . $headline . '</h3>
                 <p>
@@ -67,10 +67,12 @@ crossorigin="anonymous">
                 </p>
           
               </div>
-              </div>
+      </div>
+    </div>
           ';//echo ends here
     }
     echo "</div>";
+   
     $flag = 1;
   }
 

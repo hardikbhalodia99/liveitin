@@ -36,7 +36,12 @@
 </head>
 
 <body>
-
+<style>
+    .card-img {
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
 
    <?php
   include("nav.php");
@@ -102,7 +107,7 @@ $('#Kaziranga_favBtn').css("background-color", "green");
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      
       
     </ol>
     <div class="carousel-inner"  >
@@ -155,14 +160,14 @@ $('#Kaziranga_favBtn').css("background-color", "green");
 
 <form name="f1" action="safari-intermediate.php">
   <div class="card mb-6 ">
-    <div class="row ">
+    <div class="row no-gutters">
       <div class="col-md-7 cardWhereToGO">
         
-        <img src="images/safari-corousel-2.jpg" class="card-img" alt=" ">
+        <img src="images/safari-corousel-2.jpg" class="card-img img-fluid" alt=" ">
       </a>
       </div>
       <div class="col container">
-        <div class="card-body">
+        <div class="card-body str">
           <h2 style="opacity: 1;font-weight: bolder;font-size: 30px;"><svg style="margin: 2px;" width="1em" height="1em"
               viewBox="0 0 16 16" class="bi bi-compass" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -186,12 +191,12 @@ $('#Kaziranga_favBtn').css("background-color", "green");
 
 
   <div class="card mb-6 ">
-    <div class="row ">
+    <div class="row no-gutters">
       <div class="col-md-7 cardWhereToGO">
-        <img src="images/kazirangaStroy.jpg" class="card-img" alt="">
+        <img src="images/kazirangaStroy.jpg" class="card-img img-fluid" alt="">
       </div>
       <div class="col container">
-        <div class="card-body">
+        <div class="card-body str">
           <h2 style="opacity: 1;font-weight: bolder;font-size: 30px;"><svg style="margin: 2px;" width="1em" height="1em"
               viewBox="0 0 16 16" class="bi bi-compass" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"

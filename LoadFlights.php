@@ -27,22 +27,27 @@
 <body>
 
     <?php
-    require("connection.php");
   session_start();
+  require("connection.php");
+
     $emailid = $_SESSION['useremail'];
     
 $no=0;
     if (isset($emailid)  ) {
 
-        $sql = "SELECT * FROM flightdb where email='$emailid'";
+        //$id = $_GET['id'];
+      
+         // $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("Fav Blog Tour database connection failed...");
+            
+            $sql = "SELECT * FROM flightdb where email='$emailid'";
             $result = $db->query($sql);
             if ($result->num_rows > 0) {
 
                 echo '<div class="row" id="seehere" style="margin-left: 10px; margin-right: 10px; margin-top: 10px;">';
                 while ($row = $result->fetch_assoc()) {
                     echo " <div class='card border border-light col-md-4 col-sm-6 col-lg-3' id='flight$no' >
-            <!-- <img src=".$row['imgSrc']." class='card-img-top' > -->
-            <img src='images/indigo.png' class='card-img-top' >
+             <img src=".$row['imgSrc']." class='card-img-top' style='height:200px;width:300px;'>
+              <!--<img src='images/indigo.png' class='card-img-top' > -->
             <div class='card-body text-info'>
               <h5 class='card-title '>Airline:" . $row['airlinename'] . "</h5>
               <h5 class='card-title'>Price:" . $row['price'] . "</h5>
@@ -59,7 +64,7 @@ $no=0;
                 echo '</div>';
             }
             else {
-                echo"<br><br><div class='text-center '><p class='display-4'>You Have not Bokked Any Flight Tickets Yet!</p><br><br>
+                echo"<br><br><div class='text-center '><p style='font-size:4vh;'>You Have not Booked Any Flight Tickets Yet!</p><br><br>
                 <a href='flightapi.php' name='bt_Register' class='btn btn-warning'>Book Tickets Now!</a>
                 </div><br><br><br><br>";
                 }

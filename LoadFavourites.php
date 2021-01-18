@@ -10,13 +10,20 @@
 <body>
 
     <?php
-    require("connection.php");
   session_start();
+  require("connection.php");
+
     $emailid = $_SESSION['useremail'];
-   
+    // $emailid="123@gmail.com";
 $no=0;
     if (isset($emailid)  ) {
 
+        //$id = $_GET['id'];
+      
+         // $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("Fav Blog Tour database connection failed...");
+       // $db = mysqli_connect("localhost", "root", "", "epiz_26655356_liveitin") or die("help me");
+
+        
             $sql = "SELECT * FROM favourite where email='$emailid'";
             $result = $db->query($sql);
             if ($result->num_rows > 0) {
@@ -24,7 +31,7 @@ $no=0;
                 echo '<div class="row" id="seehere" style="margin-left: 10px; margin-right: 10px; margin-top: 10px;">';
                 while ($row = $result->fetch_assoc()) {
                     echo " <div class='card border border-light col-md-4 col-sm-6 col-lg-3' id='rowRemove$no' >
-            <img src=".$row['imgSrc']." class='card-img-top' >
+            <img src=".$row['imgSrc']." class='card-img-top text-center'  style='height:200px;width:330px;'>
             <div class='card-body'>
               <h5 class='card-title'>" . $row['place'] . "</h5>
               
@@ -32,9 +39,7 @@ $no=0;
               class='btn btn-outline-danger'>Remove Place</button>
               
             </div>
-            <div class='card-footer'>
-              <small class='text-muted'>Last updated 3 mins ago</small>
-            </div>
+           
           </div>";
           $no+=1;
                 }

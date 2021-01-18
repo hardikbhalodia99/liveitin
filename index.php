@@ -51,52 +51,16 @@
     }
 </style>
 <script>
-    $(window).on('load', function () {
-        $('#myModal').modal('show');
-    });
+    // $(window).on('load', function () {
+    //     $('#myModal').modal('show');
+    // });
 </script>
 <body>
  
  <?php
 
-include("navbar.php");
- if (isset($_SESSION['useremail'])) {
-    $useremail = $_SESSION['useremail'];
-  
-    //making query
-    $sql = "SELECT * from account_info where email='$useremail'" or die("image name fetching failed");
-    $result = mysqli_query($db, $sql) or die("query failed");
-    $row = mysqli_fetch_assoc($result);
-    $imagename = "profileImages/" . $row['image'];
-    $profilename = $row['name'];
-   
+include("nav.php");
 
-    echo "
-    
-    <script type='text/javascript'>
-     $(document).ready(function(){
-
-      $('#logindropdown').css('display','none');
-       $('#logoutdropdown').css('display','');
-     });
-    </script>
-    
-    
-    ";
-  } else {
-
-    $imagename = 'https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg';
-    $profilename = "comming from register";
-
-    echo "
-    <script type='text/javascript'>
-     $(document).ready(function(){
-      $('#logoutdropdown').css('display','none');
-     $('#logindropdown').css('display','');
-     });
-    </script>
-    ";
-  }
 
  ?> 
  <div class="modal" tabindex="-1" id="myModal">
@@ -852,7 +816,7 @@ include("navbar.php");
           <p class="card-text">  
             
          <h3>Customize Your Trip Now</h3>
-          <a href="#" class="btn btn-block btn-outline-info">PLAN A TRIP NOW!</a>
+          <a href="tripplannerpage.php" class="btn btn-block btn-outline-info">PLAN A TRIP NOW!</a>
         </div>
       </div>
     </div> 
@@ -860,130 +824,12 @@ include("navbar.php");
 </div>
 
 </div>
+
+    
+<?php
+include("footer.html");
+?>
 <script src="owl.carousel.min.js"></script>
 <script src="custom.js"></script>
-    
-
-
-  <!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4 " style="background-color:rgba(0, 0, 0,1);color: white;" >
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <a href="#!">PROJECTS</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">ABOUT US</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">BLOG</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">AWARDS</a>
-            </p>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-        <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="White" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-              </svg> New York, NY 10012, US</p>
-          </li>
-          <li>
-            <p>
-              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-              </svg></i> info@example.com</p>
-          </li>
-          <li>
-            <p>
-              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
-              </svg></i> + 01 234 567 88</p>
-          </li>
-          <li>
-            <p>
-              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-printer-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5z"/>
-                <path fill-rule="evenodd" d="M11 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
-                <path fill-rule="evenodd" d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-              </svg></i> + 01 234 567 89</p>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center mx-auto my-4">
-
-        <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-          <a href="#" class="fa fa-twitter text-center"></a><br>
-          <a href="#" class="fa fa-google text-center"></a><br>
-           <a href="#" class="fa fa-instagram text-center"></a><br>
-           <a href="#" class="fa fa-youtube text-center"></a><br>
-           <a href="#" class="fa fa-facebook text-center"></a>
-           <!-- <a href="#" class="fa fa-google text-center"></a><br> -->
-           
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
-    <a href="#" >Mywebsitename.com</a>
-    
-  </div>
-  <!-- Copyright -->
-   
-</footer>
-<!-- Footer -->
-
-
 </body>
 </html>

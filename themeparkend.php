@@ -118,7 +118,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Atlantis Water Park,Dubai</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Atlantis Water Park,Dubai</h6>
                             <p class="card-text">
                             <p>
                             <h5>Escape the heat and head off to Dubai's one of the most famous water park experiences,

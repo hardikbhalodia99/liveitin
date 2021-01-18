@@ -182,7 +182,7 @@ $('#Somnath_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Golden Temple,Amritsar</h6>
+                            <h6 class="card-title" style="font-size:5vh;">Golden Temple,Amritsar</h6>
                             <p class="card-text">
                             <p>
                             <h5>The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central
@@ -207,7 +207,7 @@ $('#Somnath_favBtn').css("background-color", "green");
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Konark Sun Temple</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Konark Sun Temple</h6>
                             <p class="card-text">
                             <p>
                             <h5>On the shores of the Bay of Bengal, bathed in the rays of the rising sun, the temple at
@@ -235,7 +235,7 @@ $('#Somnath_favBtn').css("background-color", "green");
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Somnath Jyotirlings,Gujarat</h6>
+                            <h6 class="card-title" style="font-size:5vh;white-space:no-wrap">Somnath Jyotirlings,<br>Gujarat</h6>
                             <p class="card-text">
                             <p>
                             <h5>Shree Somnath is first among the twelve Aadi Jyotirlings of India. Moon was

@@ -169,10 +169,10 @@ $('#Rishikesh_RiveRafting_favBtn').css("background-color", "green");
 
  <form name="f1" action="">
   <div class="card mb-6 ">
-    <div class="row ">
-      <div class="col-md-7 cardWhereToGO">
-        <a href="miamiPage.php">
-        <img src="images/adv-info-2.jpg" name="Dubai_SkyDiving_imgSrc" class="card-img" alt=" ">
+    <div class="row no-gutters">
+      <div class="col-md-6 cardWhereToGO">
+        
+        <img src="images/adv-info-2.jpg" name="Dubai_SkyDiving_imgSrc" class="card-img img-fluid " alt=" ">
       </a>
       </div>
       <div class="col container">
@@ -201,9 +201,9 @@ $('#Rishikesh_RiveRafting_favBtn').css("background-color", "green");
 
 
   <div class="card mb-6 ">
-    <div class="row ">
-      <div class="col-md-7 cardWhereToGO">
-        <img src="images/adventure-info-1.jpg" name="Rishikesh_RiveRafting_imgSrc" class="card-img" alt="Hawai , America">
+    <div class="row no-gutters">
+      <div class="col-md-6 cardWhereToGO">
+        <img src="images/adventure-info-1.jpg" name="Rishikesh_RiveRafting_imgSrc" class="card-img img-fluid " alt="Hawai , America">
       </div>
       <div class="col container">
         <div class="card-body str">
@@ -227,9 +227,9 @@ $('#Rishikesh_RiveRafting_favBtn').css("background-color", "green");
     </div>
   </div>
   <div class="card mb-6 ">
-    <div class="row ">
-      <div class="col-md-7 cardWhereToGO">
-        <img src="images/adv-info=3.jpg" name="Maldivs_ScubaDiving_imgSrc" class="card-img" alt="">
+    <div class="row no-gutters">
+      <div class="col-md-6 cardWhereToGO">
+        <img src="images/adv-info=3.jpg" name="Maldivs_ScubaDiving_imgSrc" class="card-img img-fluid " alt="">
       </div>
       <div class="col container">
         <div class="card-body str">

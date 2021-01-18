@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">KANGIRI-Craft Of Kashmir</h6>
+                            <h6 class="card-title " style="font-size:5vh;">KANGIRI-Craft Of Kashmir</h6>
                             <p class="card-text">
                             <p>
                             <h5>Believed to have been built in the 13th century CE the temple was built by the King
@@ -139,7 +139,7 @@
                             <h6 class="card-title display-4"></h6>
                             <p class="card-text">
                             <p>
-                            <h6 class="card-title display-4">Unique Craft Of Kutch</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Unique Craft Of Kutch</h6>
                             <h5>It is a uniquue Handcraft of Kutch,Made up of two materials,Ajarakh and Kalamkari. When
                                 we think of fabrics that represent India’s heritage and culture, the two art forms
                                 that come to mind are Kalamkari and Ajrakh. Both come from diverse parts of India,
@@ -168,7 +168,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Shells</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Shells</h6>
                             <p class="card-text">
                             <p>
                             <h5>There are three kinds of shell from which shell handicrafts are made in India ? conch
@@ -193,7 +193,7 @@
                             <h6 class="card-title display-4"></h6>
                             <p class="card-text">
                             <p>
-                            <h6 class="card-title display-4">Leather Products</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Leather Products</h6>
                             <h5>The age-old convention of leather skill in India is proved by ancient sages and
                                 ascetics. In the past, leather was not only used in making clothes and footwear but also
                                 in making caps, bags, saddles, shield etc. India is famous worldwide for its leather
@@ -219,7 +219,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h6 class="card-title display-4">Saris and Silk</h6>
+                                <h6 class="card-title " style="font-size:5vh;">Saris and Silk</h6>
                                 <p class="card-text">
                                 <p>
                                 <h5>Saree or saris is a cloth of around 4.5 metres to 8 meters that women wrap around
@@ -251,7 +251,7 @@
                                 <h6 class="card-title display-4"></h6>
                                 <p class="card-text">
                                 <p>
-                                <h6 class="card-title display-4">Carpet Weaving</h6>
+                                <h6 class="card-title" style="font-size:5vh;">Carpet Weaving</h6>
                                 <h5>Carpet weaving is also an important craft in North India. Uttar Pradesh has the
                                     largest carpet weaving industries in the country, and the carpets are incredibly
                                     beautiful with designs such as the Taj Mahal woven on them. More than 500 carpet
@@ -270,11 +270,11 @@
                 </div>
             </div>
 
- <div class="text-center event-headings">
-            <B>
-                <h2>EXPERIENCES</h2>
-            </B>
-        </div>
+         
+            
+        <h2 class="text-center ">EXPERIENCES</h2>
+            
+  
 
 
 <div class="container-fluid row" style="margin:auto;">

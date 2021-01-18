@@ -27,14 +27,17 @@
 <body>
 
     <?php
-    require("connection.php");
+    require('connection.php');
   session_start();
     $emailid = $_SESSION['useremail'];
     
 $no=0;
     if (isset($emailid)  ) {
 
-        
+        //$id = $_GET['id'];
+      
+         // $db = new mysqli("localhost", "id15026047_patel_jayen", "msukifeeS@99", "id15026047_freehost") or die("Fav Blog Tour database connection failed...");
+            
             $sql = "SELECT * FROM hoteldb where email='$emailid'";
             $result = $db->query($sql);
             if ($result->num_rows > 0) {
@@ -60,7 +63,7 @@ $no=0;
                 echo '</div>';
             }
             else {
-                echo"<br><br><div class='text-center '><p class='display-4'>You Have not Added Any Favourites Yet!</p><br><br>
+                echo"<br><br><div class='text-center '><p style='font-size:4vh;'>You Have not Added Any Favourites Yet!</p><br><br>
                 <a href='index.php' name='bt_Register' class='btn btn-warning'>Add Favourites Now!</a>
                 </div><br><br><br><br>";
                 }

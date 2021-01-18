@@ -110,7 +110,6 @@ $('#Paris_favBtn').css("background-color", "green");
         <img src="images/paris-info-3.jpg" class="d-block w-100" >
         <div class="carousel-caption d-none d-md-block">
           <h5>Paris</h5>
-          <p></p>
         </div>
       </div>
       
@@ -119,7 +118,7 @@ $('#Paris_favBtn').css("background-color", "green");
         
         <div class="carousel-caption d-none d-md-block">
           <h5>London</h5>
-          <p></p>
+          
         </div>
       </div>
       
@@ -127,13 +126,12 @@ $('#Paris_favBtn').css("background-color", "green");
         <img src="images/burj-khalifa1.jpg"class="d-block w-100" >
         <div class="carousel-caption d-none d-md-block">
           <h5>Dubai</h5>
-          <p></p>
+          
         </div>
       </div>
      
     </div>
-    <!-- <script src="owl.carousel.min.js"></script>
-    <script src="custom.js"></script> -->
+  
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -154,14 +152,15 @@ $('#Paris_favBtn').css("background-color", "green");
 
   <form name="f1" action="citybricks-interm.php">
     <div class="card mb-6 ">
-      <div class="row ">
-        <div class="col-md-7 cardWhereToGO">
+      <div class="row no-gutters">
+           <div class="col-md-6 cardWhereToGO">
           
-          <img src="images/dubai-info-2.jpeg" name="Dubai_SkyDiving_imgSrc" class="card-img" alt=" ">
-        </a>
+          <img src="images/dubai-info-2.jpeg" name="Dubai_SkyDiving_imgSrc" class="card-img img-fluid" alt=" ">
+        
         </div>
-        <div class="col container">
-          <div class="card-body str">
+        
+        <div class="col-md-6 container">
+          <div class="card-body">
             <h2 style="opacity: 1;font-weight: bolder;font-size: 30px;" name="skydiving"><svg style="margin: 2px;" width="1em" height="1em"
                 viewBox="0 0 16 16" class="bi bi-compass" fill="black" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -180,17 +179,19 @@ $('#Paris_favBtn').css("background-color", "green");
             <a href="city-bricks.php" class="btn btn-outline-dark">Explore</a><br><br>
           </div>
         </div>
+       
       </div>
     </div>
   
   
   
     <div class="card mb-6 ">
-      <div class="row ">
-        <div class="col-md-7 cardWhereToGO">
-          <img src="images/Louvre-museum-paris.jpg" name="Rishikesh_RiveRafting_imgSrc" class="card-img" alt="Hawai , America">
+      <div class="row no-gutters">
+          <div class="col-md-6 cardWhereToGO">
+          <img src="images/Louvre-museum-paris.jpg" name="Rishikesh_RiveRafting_imgSrc" class="card-img img-fluid" alt="Hawai , America">
         </div>
-        <div class="col container">
+       
+        <div class="col-md-6 container">
           <div class="card-body str">
             <h2 style="opacity: 1;font-weight: bolder;font-size: 30px;" name="RiverRafting"><svg style="margin: 2px;" width="1em" height="1em"
                 viewBox="0 0 16 16" class="bi bi-compass" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -211,6 +212,7 @@ $('#Paris_favBtn').css("background-color", "green");
             <a href="paris.php" class="btn btn-outline-dark">Explore</a>
           </div>
         </div>
+         
       </div>
     </div>
     

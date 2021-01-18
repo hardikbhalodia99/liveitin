@@ -39,9 +39,7 @@
 		object-fit: cover;
 	}
 
-	.carousel-item {
-		height: 600px;
-	}
+	
 
 	.item img {
 		position: absolute;
@@ -106,7 +104,7 @@
 
    
     <br>
-    <div class="text-center display-4 event-headings" style="margin:15px;">Cruise:Mumbai-Goa</div>
+    <div class="text-center event-headings" style="margin:15px;font-size:5vh;">Cruise:Mumbai-Goa</div>
      <div class="container-fluid text-center">
     <div class=" bg-light changeStyle">
       <button  class="btn btn-warning btn-lg " href="" style="margin: 14px;">SCHEDUAL A TRIP</button>
@@ -123,7 +121,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h6 class="card-title display-4">Mumbai To Goa</h6>
+                            <h6 class="card-title " style="font-size:5vh;">Mumbai To Goa</h6>
                             <p class="card-text">
                             <p>
                             <h5>The journey from Mumbai to Goa is now more fun and luxurious with the launch of India’s

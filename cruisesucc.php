@@ -1,3 +1,7 @@
+<?php
+   include("nav.php");
+   ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +30,6 @@
 <body>
      <?php
   
-//   $emailId=$_SESSION['useremail'];
   if(isset($emailId))
   {
       $place=$_COOKIE['added'];
@@ -116,10 +119,7 @@ $('#Kochi_favBtn').css("background-color", "green");
 
 
 
-   <?php
-   include("nav.php");
-   ?>
-
+  
 
 
 

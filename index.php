@@ -95,7 +95,7 @@ include("nav.php");
             <div class="carousel-inner"  >
               <div class="carousel-item active" >
                 
-                <video id="video" muted controls class="d-block w-100" loop="loop" preload="auto">
+                <video id="video" autoplay controls class="d-block w-100" loop="loop" preload="auto">
                   <source src="http://egypt.travel/media/1644/this-is-egypt.mp4" controls></source>
                 </video>
                 <div class="carousel-caption d-none d-md-block">

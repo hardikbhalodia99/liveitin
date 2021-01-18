@@ -219,7 +219,7 @@
 Your contents will load here
       </div>
 
-  <button  id="readmore" onclick="loadbox()" style="margin-left: 50%; margin-bottom: 40px;" >READ MORE</button>
+  <button  id="readmore" hidden onclick="loadbox()" style="margin-left: 50%; margin-bottom: 40px;" >READ MORE</button>
 
 
   <!--   <div class="container-fluid row" style="margin:auto;">

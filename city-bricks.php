@@ -21,7 +21,7 @@
  <?php
   include("nav.php");
   ?>
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade  " data-ride="carousel" style="margin-top:5px;" >
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade  " data-ride="carousel"  >
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -210,6 +210,26 @@
       </div>
 
 </div>
+
+
+<script>
+    window.onload=function() {
+      document.getElementById("readmore").click();
+    }
+
+  
+     function loadbox(){
+          $("#itembox").load("Loadblogs.php?place=dubai");
+   
+  }
+  </script>
+
+
+      <div id="itembox"  >
+Your contents will load here
+      </div>
+
+  <button hidden  id="readmore" onclick="loadbox()" style="margin-left: 50%; margin-bottom: 40px;" >READ MORE</button>
 <?php
   include("footer.html");
   ?>

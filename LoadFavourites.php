@@ -46,9 +46,9 @@ $no=0;
                 echo '</div>';
             }
             else {
-                echo"<br><br><div class='text-center '><p class='display-4'>You Have not Added Any Favourites Yet!</p><br><br>
+                echo"<div class='text-center '><p class='display-6'>You Have not Added Any Favourites Yet!</p>
                 <a href='index.php' name='bt_Register' class='btn btn-warning'>Add Favourites Now!</a>
-                </div><br><br><br><br>";
+                </div>";
                 }
 
         

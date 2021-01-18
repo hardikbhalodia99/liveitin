@@ -81,7 +81,7 @@ require('connection.php');
   {
     unset($_SESSION['useremail']);
     $imagename = 'https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg';
-    
+
     echo '
     
     <script type="text/javascript">
@@ -101,8 +101,8 @@ require('connection.php');
     $pwd=$_REQUEST['password'];
        
 
-    $sql = "SELECT * from account_info where email='$emailid' AND password='$pwd'" or die("login query failed");
-    $result = mysqli_query($db, $sql) or die("login failed");
+    $result=$db->query("SELECT * from account_info where email='$emailid' AND password='$pwd'") or die("login query failed");
+   
     $row = mysqli_fetch_assoc($result);
     $imagename = "profileImages/" . $row['image'];
     

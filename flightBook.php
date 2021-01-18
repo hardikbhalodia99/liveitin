@@ -1,3 +1,16 @@
+<?php
+
+include("nav.php");
+
+if(!isset($_SESSION['useremail']))
+{
+   echo ' 
+   <script>
+     window.location="error.html";
+   </script>';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +37,7 @@
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
    
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
- 
+
 
 
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
@@ -105,9 +118,7 @@
       
        
    </script>
-<?php
-include("nav.php");
-?>
+
   <div class="card bg-light">
     <img class="img-fluid" src="images/flight_bg.jpg" class="card-img" alt="" style="height:840px;opacity: 0.8;">
     <div class="card-img-overlay">

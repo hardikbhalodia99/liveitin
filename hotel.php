@@ -1,3 +1,18 @@
+<?php
+
+include("nav.php");
+
+if(!isset($_SESSION['useremail']))
+{
+   echo ' 
+   <script>
+     window.location="error.html";
+   </script>';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,10 +54,8 @@
 }
 </style>
 </head>
-<body>
-    <?php
-    include("nav.php");
-    ?><br><br>
+<body style="background-color: cornflowerblue;">
+    <br><br>
 
  <div class="modal fade bd-example-modal-lg" tabindex="-1" id="myModal">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">

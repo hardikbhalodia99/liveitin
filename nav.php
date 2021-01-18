@@ -82,8 +82,6 @@ require('connection.php');
     unset($_SESSION['useremail']);
     $imagename = 'https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg';
     
-     
-
     echo '
     
     <script type="text/javascript">
@@ -193,7 +191,7 @@ require('connection.php');
             <ul class="navbar-nav ml-auto text-center">
                  
                 <li class="nav-item active">
-                    <a class="nav-link navbar-brand text-white" href="tripplannerpage.php">
+                    <a class="nav-link navbar-brand " style="color: orange; font-weight:bolder;" href="tripplannerpage.php">
                         
                         <img src="suitcase (1).svg"
                             style="height: 18px;">&nbsp;Trip
@@ -207,7 +205,7 @@ require('connection.php');
                 </li>
                 <li class="nav-item active" id="logout_li" style="display: none;" >
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                    <input type="submit" name="logout" class="nav-link navbar-brand btn btn-outline-primary" id="logout_btn" value="LOGOUT"  >
+                    <input type="submit" name="logout" class="nav-link navbar-brand btn btn-primary text-white" id="logout_btn" value="LOGOUT"  >
                     </form>
                 </li>
                 <li class="nav-item active">

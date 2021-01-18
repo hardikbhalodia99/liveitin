@@ -1,6 +1,10 @@
 <?php
-$link=new mysqli("localhost","id15026047_patel_jayen","msukifeeS@99","id15026047_freehost");
 session_start();
+if(!isset($_SESSION['useremail']))
+{
+    header("location:error.html");
+}
+require("connection.php");
 $email=$_SESSION['useremail'];
 
 $airline_name=$_POST['airline-name'];
@@ -10,8 +14,8 @@ $date=$_POST['date'];
 $origin=$_POST['origin'];
 $destination=$_POST['destination'];
 
-$link->query("insert into flightdb values('$airline_name','$price','$origin','$destination','$date','$email','$imgSrc')");
+$db->query("insert into flightdb values('$airline_name','$price','$origin','$destination','$date','$email','$imgSrc')");
 
-echo $email;
-echo Added;
+
+
 ?>

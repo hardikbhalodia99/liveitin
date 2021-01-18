@@ -2,8 +2,7 @@
 <?php
 if(!isset($_SESSION['useremail']))
 {
-  header("location: error.html");
-}
+ 
 
 ?>
 
@@ -198,3 +197,11 @@ Your contents will load here
   <?php include('footer.html');?>
 </body>
 </html>
+
+<?php
+
+        }
+else{
+  header("location: error.html");
+}
+        ?>

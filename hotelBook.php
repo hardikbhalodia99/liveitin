@@ -1,3 +1,18 @@
+<?php
+
+include("nav.php");
+
+if(!isset($_SESSION['useremail']))
+{
+   echo ' 
+   <script>
+     window.location="error.html";
+   </script>';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,9 +82,7 @@
 
 </head>
 <body>
-  <?php
-include("nav.php");
-?>
+ 
  <script>
 //  console.log(document.getElementById('startdate').value);
       function validate()

@@ -1,6 +1,13 @@
 <?php
 require("connection.php");
 session_start();
+if(!isset($_SESSION['useremail']))
+{
+   echo ' 
+   <script>
+     window.location="error.html";
+   </script>';
+}
 $email=$_SESSION['useremail'];
 
 $rating=$_POST['rating'];

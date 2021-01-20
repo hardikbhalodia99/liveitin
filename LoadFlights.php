@@ -64,9 +64,9 @@ $no=0;
                 echo '</div>';
             }
             else {
-                echo"<br><br><div class='text-center '><p style='font-size:4vh;'>You Have not Booked Any Flight Tickets Yet!</p><br><br>
+                echo"<div class='text-center '><p style='font-size:4vh;'>You Have not Booked Any Flight Tickets Yet!</p>
                 <a href='flightapi.php' name='bt_Register' class='btn btn-warning'>Book Tickets Now!</a>
-                </div><br><br><br><br>";
+                </div>";
                 }
 
         

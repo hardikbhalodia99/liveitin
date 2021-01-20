@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -28,8 +28,23 @@
  
 
 
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
-   
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="owl.carousel.min.css">
+<link rel="stylesheet" href="owl.theme.default.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/HomeCSS.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 
 </head>
 
@@ -189,9 +204,11 @@ require('connection.php');
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto text-center">
+            
+               
                  
                 <li class="nav-item active">
-                    <a class="nav-link navbar-brand " style="color: orange; font-weight:bolder;" href="tripplannerpage.php">
+                    <a class="nav-link navbar-brand " style="color:orange; font-weight:bolder;" href="tripplannerpage.php">
                         
                         <img src="suitcase (1).svg"
                             style="height: 18px;">&nbsp;Trip
@@ -200,17 +217,17 @@ require('connection.php');
                
 
                 <li class="nav-item active" id="sign_in_li">
-                    <input type="submit" class="nav-link navbar-brand btn btn-primary text-white" id="sign_in_btn" value="SIGN IN"  >
+                    <input type="submit" class="nav-link navbar-brand btn btn-warning text-white" id="sign_in_btn" value="SIGN IN"  >
                     
                 </li>
                 <li class="nav-item active" id="logout_li" style="display: none;" >
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                    <input type="submit" name="logout" class="nav-link navbar-brand btn btn-primary text-white" id="logout_btn" value="LOGOUT"  >
+                    <input type="submit" name="logout" class="nav-link navbar-brand btn btn-warning text-white" id="logout_btn" value="LOGOUT"  >
                     </form>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link navbar-brand text-white " href="favourites.php"><img src="<?=$imagename; ?>" class="rounded-circle"
-                           style="height:44px;width:44px;border-radius:50%;top:2px;"></a>
+                           style="height:50px;width:50px;border-radius:4px;"></a>
                 </li>
             </ul>
         </div>

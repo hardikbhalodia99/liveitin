@@ -57,9 +57,9 @@
           echo "</div>";
          }
          else {
-          echo"<br><br><br><br><br><br><br><br><br><br>
+          echo"
           <div class='text-center'>
-          <p class='display-4'> No Blogs Yet!</p><br><br>
+          <p style='font-size:4vh;> No More Blogs !!</p>
           </div>";
           }
 /* 

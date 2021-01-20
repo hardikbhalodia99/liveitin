@@ -74,7 +74,7 @@
 
   <div class="container-fluid text-center">
     <div class=" bg-light changeStyle">
-      <a class="btn btn-warning btn-lg " href="tripPlan2.html" style="margin: 14px;">SCHEDUAL A TRIP</a>
+      <a class="btn btn-warning btn-lg " href="tripplannerpage.php" style="margin: 14px;">SCHEDUAL A TRIP</a>
   </div>
   </div>
 

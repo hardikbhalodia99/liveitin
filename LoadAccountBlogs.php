@@ -114,9 +114,9 @@
     $falg = 1;
   }
   if ($flag == 0) {
-    echo "<br><br>
+    echo "
         <div class='text-center'>
-        <p class='display-4'> No Blogs Yet!</p><br><br><br><br><br>
+        <p style='font-size:4vh;'> You haven't visited any places Yet!</p>
         </div>";
   }
 

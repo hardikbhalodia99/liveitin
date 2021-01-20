@@ -14,7 +14,7 @@ $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
 setCookie("added",$place);
-echo Added;
+ 
 }
 else if($id=="Goa_favBtn")
 {
@@ -24,7 +24,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Kochi_favBtn")
 {
@@ -33,7 +33,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Wular_favBtn")
 {
@@ -42,7 +42,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Nainital_favBtn")
 {
@@ -51,7 +51,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Saputara_favBtn")
 {
@@ -60,7 +60,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Pichola_favBtn")
 {
@@ -70,7 +70,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 if($id=="Golden_favBtn")
 {
@@ -79,7 +79,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Konark_favBtn")
 {
@@ -89,7 +89,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Somnath_favBtn")
 {
@@ -98,7 +98,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 if($id=="WaterKingdom_favBtn")
 {
@@ -107,7 +107,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="EsselWorld_favBtn")
 {
@@ -117,7 +117,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Gir_favBtn")
 {
@@ -127,7 +127,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Kaziranga_favBtn")
 {
@@ -137,7 +137,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Miami_Florida_favBtn")
 {
@@ -147,7 +147,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Goa_India_favBtn")
 {
@@ -157,7 +157,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Hawai_America_favBtn")
 {
@@ -167,7 +167,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Bondi_Australia_favBtn")
 {
@@ -177,7 +177,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Paris_favBtn")
 {
@@ -187,7 +187,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Dubai_favBtn")
 {
@@ -197,7 +197,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Dubai_SkyDiving_favBtn")
 {
@@ -207,7 +207,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 
 else if($id=="Maldivs_ScubaDiving_favBtn")
@@ -218,7 +218,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 else if($id=="Rishikesh_RiveRafting_favBtn")
 {
@@ -228,7 +228,7 @@ $loc=$_POST['loc'];
 
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 
 else if($id=="Atlantis_favBtn")
@@ -238,7 +238,7 @@ $imgSrc=$_POST['imgSrc'];
 $loc=$_POST['loc'];
 
 $db->query("insert into favourite values('$place','$email','$imgSrc','$loc')");
-echo Added;
+ 
 }
 }
 else{

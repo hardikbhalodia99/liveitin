@@ -63,9 +63,10 @@ $no=0;
                 echo '</div>';
             }
             else {
-                echo"<br><br><div class='text-center '><p style='font-size:4vh;'>You Have not Added Any Favourites Yet!</p><br><br>
-                <a href='index.php' name='bt_Register' class='btn btn-warning'>Add Favourites Now!</a>
-                </div><br><br><br><br>";
+                echo"<div class='text-center '><p style='font-size:4vh;'>You Have Not Booked 
+                Any Hotels  Yet!</p>
+                <a href='index.php' name='bt_Register' class='btn btn-warning'>Book Hotels Now!</a>
+                </div>";
                 }
 
         

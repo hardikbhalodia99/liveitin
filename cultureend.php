@@ -95,13 +95,26 @@
     </div>
 
     <!--****************************************Top Cruises****************************************************************-->
-    <div class="text-center " name="click"
-        style="margin-top:25px;font-weight:bolder;font-size: xx-large;padding: 30px;">
+   
+
+    <div class="text-center event-headings" style="margin: 30px;" >
+    <B><h2>KUTCH | RAJASTHAN</h2></B>
+
+  </div>
+ 
+
+  <div class="container-fluid text-center">
+    <div class=" bg-light changeStyle">
+      <a class="btn btn-warning btn-lg " href="tripplannerpage.php" style="margin: 10px;">SCHEDUAL A TRIP</a>
+  </div>
+  </div>
+
+  <div class="text-center " name="click"
+        style="margin-top:20px;font-weight:bolder;font-size: xx-large;padding: 30px;">
         <B>
             <h2>Cultural Things Across India</h2>
         </B>
     </div>
-
 
     <form name="f1" action="">
         <div class="row container-fluid" style="margin:auto">
